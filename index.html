@@ -1,345 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-  <title>Willo's portfolio</title>
+    <title>Willo's portfolio</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
 
-  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-  <!--[if lt IE 9]>
-  <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <style>
-    /*
- * Globals
- */
-
-    /* Links */
-    a,
-    a:focus,
-    a:hover {
-      color: #fff;
-    }
-
-    /* Custom default button */
-    .btn-default,
-    .btn-default:hover,
-    .btn-default:focus {
-      color: #333;
-      text-shadow: none; /* Prevent inheritance from `body` */
-      background-color: #fff;
-      border: 1px solid #fff;
-    }
-
-
-    /*
-     * Base structure
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /*
+     * Globals
      */
 
-    html,
-    body {
-      height: 100%;
-      background-color: #333;
-    }
-    body {
-      color: #fff;
-      text-align: center;
-      text-shadow: 0 1px 3px rgba(0,0,0,.5);
-    }
+        /* Links */
+        a,
+        a:focus,
+        a:hover {
+            color: #fff;
+        }
 
-    /* Extra markup and styles for table-esque vertical and horizontal centering */
-    .site-wrapper {
-      display: table;
-      width: 100%;
-      height: 100%; /* For at least Firefox */
-      min-height: 100%;
-      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-      box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    }
-    .site-wrapper-inner {
-      display: table-cell;
-      vertical-align: top;
-    }
-    .cover-container {
-      margin-right: auto;
-      margin-left: auto;
-    }
+        /* Custom default button */
+        .btn-default,
+        .btn-default:hover,
+        .btn-default:focus {
+            color: #333;
+            text-shadow: none; /* Prevent inheritance from `body` */
+            background-color: #fff;
+            border: 1px solid #fff;
+        }
 
-    /* Padding for spacing */
-    .inner {
-      padding: 30px;
-    }
+        /*
+         * Base structure
+         */
 
+        html,
+        body {
+            height: 100%;
+            background-color: #333;
+        }
 
-    /*
-     * Header
-     */
-    .masthead-brand {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+        body {
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+        }
 
-    .masthead-nav > li {
-      display: inline-block;
-    }
-    .masthead-nav > li + li {
-      margin-left: 20px;
-    }
-    .masthead-nav > li > a {
-      padding-right: 0;
-      padding-left: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff; /* IE8 proofing */
-      color: rgba(255,255,255,.75);
-      border-bottom: 2px solid transparent;
-    }
-    .masthead-nav > li > a:hover,
-    .masthead-nav > li > a:focus {
-      background-color: transparent;
-      border-bottom-color: #a9a9a9;
-      border-bottom-color: rgba(255,255,255,.25);
-    }
-    .masthead-nav > .active > a,
-    .masthead-nav > .active > a:hover,
-    .masthead-nav > .active > a:focus {
-      color: #fff;
-      border-bottom-color: #fff;
-    }
+        /* Extra markup and styles for table-esque vertical and horizontal centering */
+        .site-wrapper {
+            display: table;
+            width: 100%;
+            height: 100%; /* For at least Firefox */
+            min-height: 100%;
+            -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+        }
 
-    @media (min-width: 768px) {
-      .masthead-brand {
-        float: left;
-      }
-      .masthead-nav {
-        float: right;
-      }
-    }
+        .site-wrapper-inner {
+            display: table-cell;
+            vertical-align: top;
+        }
 
+        .cover-container {
+            margin-right: auto;
+            margin-left: auto;
+        }
 
-    /*
-     * Cover
-     */
+        /* Padding for spacing */
+        .inner {
+            padding: 30px;
+        }
 
-    .cover {
-      padding: 0 20px;
-    }
-    .cover .btn-lg {
-      padding: 10px 20px;
-      font-weight: bold;
-    }
+        /*
+         * Header
+         */
+        .masthead-brand {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
+        .masthead-nav > li {
+            display: inline-block;
+        }
 
-    /*
-     * Footer
-     */
+        .masthead-nav > li + li {
+            margin-left: 20px;
+        }
 
-    .mastfoot {
-      color: #999; /* IE8 proofing */
-      color: rgba(255,255,255,.5);
-    }
+        .masthead-nav > li > a {
+            padding-right: 0;
+            padding-left: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff; /* IE8 proofing */
+            color: rgba(255, 255, 255, .75);
+            border-bottom: 2px solid transparent;
+        }
 
+        .masthead-nav > li > a:hover,
+        .masthead-nav > li > a:focus {
+            background-color: transparent;
+            border-bottom-color: #a9a9a9;
+            border-bottom-color: rgba(255, 255, 255, .25);
+        }
 
-    /*
-     * Affix and center
-     */
+        .masthead-nav > .active > a,
+        .masthead-nav > .active > a:hover,
+        .masthead-nav > .active > a:focus {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
 
-    @media (min-width: 768px) {
-      /* Pull out the header and footer */
-      .masthead {
-        position: fixed;
-        top: 0;
-      }
-      .mastfoot {
-        position: fixed;
-        bottom: 0;
-      }
-      /* Start the vertical centering */
-      .site-wrapper-inner {
-        vertical-align: middle;
-      }
-      /* Handle the widths */
-      .masthead,
-      .mastfoot,
-      .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-      }
-    }
+        @media (min-width: 768px) {
+            .masthead-brand {
+                float: left;
+            }
 
-    @media (min-width: 992px) {
-      .masthead,
-      .mastfoot,
-      .cover-container {
-        width: 700px;
-      }
-    }
+            .masthead-nav {
+                float: right;
+            }
+        }
 
-    body {
-      background-image: url("https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/avatar.jpg?raw=true");
-    }
+        /*
+         * Cover
+         */
 
-    .site-wrapper {
-      background-color: black;
-      opacity: 0.7;
-    }
-  </style>
+        .cover {
+            padding: 0 20px;
+        }
+
+        .cover .btn-lg {
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        /*
+         * Footer
+         */
+
+        .mastfoot {
+            color: #999; /* IE8 proofing */
+            color: rgba(255, 255, 255, .5);
+        }
+
+        /*
+         * Affix and center
+         */
+
+        @media (min-width: 768px) {
+            /* Pull out the header and footer */
+            .masthead {
+                position: fixed;
+                top: 0;
+            }
+
+            .mastfoot {
+                position: fixed;
+                bottom: 0;
+            }
+
+            /* Start the vertical centering */
+            .site-wrapper-inner {
+                vertical-align: middle;
+            }
+
+            /* Handle the widths */
+            .masthead,
+            .mastfoot,
+            .cover-container {
+                width: 100%; /* Must be percentage or pixels for horizontal alignment */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .masthead,
+            .mastfoot,
+            .cover-container {
+                width: 700px;
+            }
+        }
+
+        body {
+            background-image: url("https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/avatar.jpg?raw=true");
+        }
+
+        .site-wrapper {
+            background-color: black;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 
 <body>
 <div class="cover-container navbar-fixed-top">
 
-  <div class="masthead clearfix">
-    <div class="inner">
-      <h3 class="masthead-brand">Willo's portfolio</h3>
-      <nav>
-        <ul class="nav masthead-nav">
-          <li class="active"><a href="#about">About</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="masthead clearfix">
+        <div class="inner">
+            <h3 class="masthead-brand">Willo's portfolio</h3>
+            <nav>
+                <ul class="nav masthead-nav">
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="site-wrapper" id="about">
 
-  <div class="site-wrapper-inner">
+    <div class="site-wrapper-inner">
 
-    <div class="cover-container">
-      <div class="inner cover">
-        <h1 class="cover-heading">I am a full stack developer.</h1>
-        <p class="lead">8 Years of experience in programming on backend & 2 years on front end</p>
-        <p class="lead">
-          <a href="https://github.com/mrwillo/mrwillo.github.io/raw/master/Tran_Thanh_Duy_software_engineer.pdf" class="btn btn-lg btn-default" target="_blank">Check out my Resume</a>
-        </p>
-      </div>
+        <div class="cover-container">
+            <div class="inner cover">
+                <h1 class="cover-heading">I am a full stack developer.</h1>
+                <p class="lead">8 Years of experience in programming on backend & 2 years on front end</p>
+                <p class="lead">
+                    <a href="https://github.com/mrwillo/mrwillo.github.io/raw/master/Tran_Thanh_Duy_software_engineer.pdf"
+                       class="btn btn-lg btn-default" target="_blank">Check out my Resume</a>
+                </p>
+            </div>
 
-      <div class="mastfoot">
-        <div class="inner">
-          <p>Check out my github, <a href="http://github.com/mrwillo">Willo@2017</a></p>
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Check out my github, <a href="http://github.com/mrwillo">Willo@2017</a></p>
+                </div>
+            </div>
+
         </div>
-      </div>
 
     </div>
-
-  </div>
 
 </div>
 <div class="site-wrapper" id="portfolio">
-  <div class="site-wrapper-inner container-fluid">
-    <div class="row" style="margin-top:80px;"></div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/capitalStar.png?raw=true"/>
-          <div class="caption">
-            CapitalStar
-            <p>CAPITASTAR is the Multi-store, Multi-mall Card Less Rewards Programs by CapitaLand Mall Asia.
-              With no membership fee, no expiry and no hassle of carrying a physical card, CAPITASTAR gives you benefits on top of any existing rewards and cards programs. Simply shop and spend a minimum of $20 at any stores within our 15 participating CapitaLand Malls!
-            </p>
-          </div>
+    <div class="site-wrapper-inner container-fluid">
+        <div class="row" style="margin-top:80px;"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/capitalStar.png?raw=true"/>
+                    <div class="caption">
+                        <h5>CapitalStar</h5>
+                        <p>CAPITASTAR is the Multi-store, Multi-mall Card Less Rewards Programs by CapitaLand Mall Asia.
+                            With no membership fee, no expiry and no hassle of carrying a physical card, CAPITASTAR
+                            gives you benefits on top of any existing rewards and cards programs. Simply shop and spend
+                            a minimum of $20 at any stores within our 15 participating CapitaLand Malls!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/directv.png?raw=true"/>
+                    <div class="caption">
+                        <h5>Metadata Acquisition and Distribution (USA)</h5>
+                        <p>MAD application operates on programs provided by different vendors, loads and processes the
+                            programs and
+                            celebrities, manipulates the images, stores and copies the images to the disk. It also
+                            generates the stream
+                            copies for EPO, BIO and GO for TSI/APG processing and XML output files for Directv.com.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/kunaiTV.png?raw=true"/>
+                    <div class="caption">
+                        <h5>DASH HTML5 Player</h5>
+                        <p>DASH HTML5 Player fro KUNAI client</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/commstree.png?raw=true"/>
+                    <div class="caption">
+                        <h5>Commstree</h5>
+                        <p>
+                            It provides:
+                            - Full accountability to ensure all communication is sent and received
+                            - Real-time overview of all on-going events to broadcasts
+                            - Unprecedented control and flexibility
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/directv.png?raw=true"/>
-          <div class="caption">
-            Metadata Acquisition and Distribution (USA)
-            <p>MAD application operates on programs provided by different vendors, loads and processes the programs and
-              celebrities, manipulates the images, stores and copies the images to the disk. It also generates the stream
-              copies for EPO, BIO and GO for TSI/APG processing and XML output files for Directv.com.</p>
-          </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/cartoon4kid.png?raw=true"/>
+                    <div class="caption">
+                        <h5>Cartoon4kid</h5>
+                        <p>
+                            All content specified for gaming & cartoon for kids.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/kunaiTV.png?raw=true"/>
-          <div class="caption">
-            DASH HTML5 Player
-            <p>DASH HTML5 Player fro KUNAI client</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/commstree.png?raw=true"/>
-          <div class="caption">
-            Commstree
-            <p>
-              It provides:
-              -	Full accountability to ensure all communication is sent and received
-              -	Real-time overview of all on-going events to broadcasts
-              -	Unprecedented control and flexibility
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 <div class="site-wrapper" id="contact">
 
-  <div class="site-wrapper-inner">
+    <div class="site-wrapper-inner">
 
-    <div class="cover-container">
-      <div class="row">
-        <div class="form-horizontal form-group">
-          <div class="col-md-3">
-            <label class="control-label">Name:</label>
-          </div>
-          <div class="col-md-9">
-            <input class="form-control" placeholder="Your name"/>
-          </div>
-        </div>
-        <div class="form-horizontal form-group form">
-          <div class="col-md-3">
-            <label class="control-label">Email:</label>
-          </div>
-          <div class="col-md-9">
-            <input class="form-control" placeholder="Your email"/>
-          </div>
-        </div>
-        <div class="form-horizontal form-group">
-          <div class="col-md-3">
-            <label class="control-label">Message:</label>
-          </div>
-          <div class="col-md-9">
-            <textarea rows="4" class="form-control" placeholder="Your message"></textarea>
-          </div>
-        </div>
-      </div>
-      <br/>
-      <div class="row">
-        <div class="form-horizontal form-group">
-          <div class="col-md-3 col-md-offset-6">
-            <button class="btn-primary btn-block">Send</button>
-          </div>
-        </div>
-      </div>
+        <div class="cover-container">
+            <div class="row">
+                <div class="form-horizontal form-group">
+                    <div class="col-md-3">
+                        <label class="control-label">Name:</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input class="form-control" placeholder="Your name"/>
+                    </div>
+                </div>
+                <div class="form-horizontal form-group form">
+                    <div class="col-md-3">
+                        <label class="control-label">Email:</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input class="form-control" placeholder="Your email"/>
+                    </div>
+                </div>
+                <div class="form-horizontal form-group">
+                    <div class="col-md-3">
+                        <label class="control-label">Message:</label>
+                    </div>
+                    <div class="col-md-9">
+                        <textarea rows="4" class="form-control" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="form-horizontal form-group">
+                    <div class="col-md-3 col-md-offset-6">
+                        <button class="btn-primary btn-block">Send</button>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </div>
-  </div>
 </div>
 <!-- Bootstrap core JavaScript
 ================================================== -->
