@@ -1,135 +1,191 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/avatar.JPG?raw=true" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+  <title>Willo's porfolio</title>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="https://raw.githubusercontent.com/mrwillo/mrwillo.github.io/master/css/cover.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]>
+  <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style>
+
+    body {
+      background-image: url("./avatar.jpg");
+    }
+
+    .site-wrapper {
+      background-color: black;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+<div class="cover-container navbar-fixed-top">
+
+  <div class="masthead clearfix">
+    <div class="inner">
+      <h3 class="masthead-brand">Willo's porfolio</h3>
+      <nav>
+        <ul class="nav masthead-nav">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#porfolio">Porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Duy.</h1>
-    <p>A Full Stack Programmer.</p>
-    <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/avatar.JPG?raw=true" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+<div class="site-wrapper" id="about">
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-      I have total 8 years of working experience, work as full stack software engineer, team leader and mentor for members.
-      Mostly with Web-based application, application design and requirement clarification.
-    </p>
-      <p>Learn, Learn and Learn. It is my core attitude.</p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Java</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Spring Framework</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">NodeJS</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
-    </div>
-    <p class="w3-wide">AngularJS</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">CSS</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-    </div>
-    <p class="w3-wide">REST API</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div><br>
+  <div class="site-wrapper-inner">
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <div class="cover-container">
+      <div class="inner cover">
+        <h1 class="cover-heading">I am a full stack developer.</h1>
+        <p class="lead">8 Years of experience in programming in backend & 2 years on front end</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-default">Check out my Resume</a>
+        </p>
+      </div>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ho Chi Minh, Vietnam</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +84 909 002 052</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tranduy86los@gmail.com</p>
-    </div><br>
-    <!-- <p>Lets get in touch. Send me a message:</p>
+      <div class="mastfoot">
+        <div class="inner">
+          <p>Check out my github, <a href="http://github.com/mrwillo">Willo@2017</a></p>
+        </div>
+      </div>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form> -->
-  <!-- End Contact Section -->
+    </div>
+
   </div>
 
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
 </div>
+<div class="site-wrapper" id="porfolio">
+  <div class="site-wrapper-inner container-fluid">
+    <div class="row" style="margin-top:80px;"></div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/capitalStar.png?raw=true"/>
+          <div class="caption">
+            CapitalStar
+            <p>CAPITASTAR is the Multi-store, Multi-mall Card Less Rewards Programs by CapitaLand Mall Asia.
+              With no membership fee, no expiry and no hassle of carrying a physical card, CAPITASTAR gives you benefits on top of any existing rewards and cards programs. Simply shop and spend a minimum of $20 at any stores within our 15 participating CapitaLand Malls!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/directv.png?raw=true"/>
+          <div class="caption">
+            Metadata Acquisition and Distribution (USA)
+            <p>MAD application operates on programs provided by different vendors, loads and processes the programs and
+              celebrities, manipulates the images, stores and copies the images to the disk. It also generates the stream
+              copies for EPO, BIO and GO for TSI/APG processing and XML output files for Directv.com.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/kunaiTV.png?raw=true"/>
+          <div class="caption">
+            DASH HTML5 Player
+            <p>DASH HTML5 Player fro KUNAI client</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="https://github.com/mrwillo/mrwillo.github.io/blob/master/imgs/commstree.png?raw=true"/>
+          <div class="caption">
+            Commstree
+            <p>
+              It provides:
+              -	Full accountability to ensure all communication is sent and received
+              -	Real-time overview of all on-going events to broadcasts
+              -	Unprecedented control and flexibility
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="site-wrapper" id="contact">
 
+  <div class="site-wrapper-inner">
+
+    <div class="cover-container">
+      <div class="row">
+        <div class="form-horizontal form-group">
+          <div class="col-md-3">
+            <label class="control-label">Name:</label>
+          </div>
+          <div class="col-md-9">
+            <input class="form-control" placeholder="Your name"/>
+          </div>
+        </div>
+        <div class="form-horizontal form-group form">
+          <div class="col-md-3">
+            <label class="control-label">Email:</label>
+          </div>
+          <div class="col-md-9">
+            <input class="form-control" placeholder="Your email"/>
+          </div>
+        </div>
+        <div class="form-horizontal form-group">
+          <div class="col-md-3">
+            <label class="control-label">Message:</label>
+          </div>
+          <div class="col-md-9">
+            <textarea rows="4" class="form-control" placeholder="Your message"></textarea>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="form-horizontal form-group">
+          <div class="col-md-3 col-md-offset-6">
+            <button class="btn-primary btn-block">Send</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
